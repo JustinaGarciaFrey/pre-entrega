@@ -1,0 +1,126 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: bisque;
+    background-color: rgb(18, 138, 81);
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    padding: 20px;
+}
+
+footer{
+    background-color:rgb(108, 230, 173);
+}
+
+/* ruta de especificidad */
+header nav ul {
+    background-color: beige ;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    font-family: Playfair Display ;
+    
+}
+
+header nav ul li{
+    padding: 30px; 
+}
+
+a:link{
+    text-decoration: none;
+}
+a:active{
+    color:black;
+}
+    
+/* encabezados de todas las paginas */
+h1{
+    
+    padding-left: 15px;
+    font-family: Playfair Display ;
+}
+
+h2{
+    color:rgb(19, 182, 106 );
+}
+
+ h3{
+    color:rgb(108, 230, 173);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(108, 230, 173);
+    
+ }
+
+div{
+    padding-left: 50px;
+}
+
+p{
+    padding: 30px;
+}
+
+
+/* pagina recetas dulces */
+.contenedor1{
+    display: flex;
+    flex-wrap: nowrap;
+}
+img .imagenLemonPie{
+    object-fit: cover;
+}
+
+/* pagina recetas saladas */
+.contenedor2{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+img .imagenFoccacia{
+    object-fit: cover;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+
+@media screen and (min-width: 1204px) {
+    body {
+        background-color: rgb(18, 138, 81);
+    }
+  }
+
+nav .barraDeNavegacion {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+nav .barraDeNavegacion a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+  
+
+@media screen and (max-width: 576px) {
+    nav .barraDeNavegacion a {
+      float: none;
+      width: 100%;
+    }
+  }
